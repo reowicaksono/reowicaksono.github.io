@@ -1,0 +1,1500 @@
+/* Default Dark Theme Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: #121212; /* Warna background dark */
+    color: #e0e0e0; /* Warna teks light */
+}
+
+body.active {
+    overflow: hidden;
+    z-index: -1;
+}
+
+body.light {
+    background-color: #ffffff; /* Warna background light */
+    color: #121212; /* Warna teks dark */
+}
+body.light #menu {
+    background-color: #f8f9fa;
+}
+/* Header */
+
+body.light header {
+    background: #f8f9fa; /* Light theme background */
+}
+
+
+body.light header a {
+    color: #121212; /* Light theme text color */
+}
+
+body.light header a:hover {
+    color: #3498db; /* Light theme hover text color */
+    background: #e9ecef; /* Light theme hover background */
+}
+
+/* Experience Section */
+#experience-timeline > div {
+    background: #1e1e1e; /* Dark theme background */
+    border: 1px solid #333; /* Dark theme border */
+}
+
+body.light #experience-timeline > div {
+    background: #f8f9fa; /* Light theme background */
+    border: 1px solid #ddd; /* Light theme border */
+}
+
+.vtimeline-content {
+    background: #1e1e1e; /* Dark theme background */
+    border: 1px solid #333; /* Dark theme border */
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light .vtimeline-content {
+    background: #f8f9fa; /* Light theme background */
+    border: 1px solid #ddd; /* Light theme border */
+    color: #121212; /* Light theme text color */
+}
+
+/* Timeline Icons */
+.vtimeline-icon {
+    background: #3498db; /* Dark theme icon background */
+    color: #fff; /* Dark theme icon text color */
+}
+
+body.light .vtimeline-icon {
+    background: #3498db; /* Light theme icon background */
+    color: #fff; /* Light theme icon text color */
+}
+
+/* Education Section */
+.education-block {
+    background: #1e1e1e; /* Dark theme background */
+    border: 1px solid #333; /* Dark theme border */
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light .education-block {
+    background: #f8f9fa; /* Light theme background */
+    border: 1px solid #ddd; /* Light theme border */
+    color: #121212; /* Light theme text color */
+}
+
+/* Project Section */
+.project {
+    background: #1e1e1e; /* Dark theme background */
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light .project {
+    background: #f8f9fa; /* Light theme background */
+    color: #121212; /* Light theme text color */
+}
+
+/* Skills Section */
+.skills-list li {
+    background: #333; /* Dark theme background */
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light .skills-list li {
+    background: #e9ecef; /* Light theme background */
+    color: #121212; /* Light theme text color */
+}
+
+/* Contact Section */
+#contact {
+    background: #1e1e1e; /* Dark theme background */
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light #contact {
+    background: #f8f9fa; /* Light theme background */
+    color: #121212; /* Light theme text color */
+}
+
+body.light #contact .heading {
+color: #121212;
+}
+
+
+body.light #about .heading {
+    color: #121212;
+    }
+
+#contact h2 {
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light #contact h2 {
+    color: #121212; /* Light theme text color */
+}
+
+#contact-form input,
+#contact-form textarea {
+    background: #333; /* Dark theme background */
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light #contact-form input,
+body.light #contact-form textarea {
+    background: #ffffff; /* Light theme background */
+    color: #121212; /* Light theme text color */
+}
+
+#contact-form button {
+    background: #e0e0e0; /* Dark theme button background */
+    color: #121212; /* Dark theme button text color */
+}
+
+body.light #contact-form button {
+    background: #121212; /* Light theme button background */
+    color: #ffffff; /* Light theme button text color */
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e; /* Dark theme background */
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light footer {
+    background: #f8f9fa; /* Light theme background */
+    color: #121212; /* Light theme text color */
+}
+
+.copyright p {
+    color: #e0e0e0; /* Dark theme text color */
+}
+
+body.light .copyright p {
+    color: #121212; /* Light theme text color */
+}
+
+/* Toggle Switch CSS */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: #3498db;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Test */
+
+body.light #about,
+body.light #experience,
+body.light #education,
+body.light #projects,
+body.light #skills,
+body.light #contact,
+body.light .optional-section {
+    background: #f8f9fa; /* Warna background light */
+    color: #121212; /* Warna teks dark */
+    border-color: #ddd; /* Warna border light */
+}
+body.light .vtimeline-date {
+    color: #121212; /* Warna teks dark */
+}
+body.light .vtimeline-icon {
+    background: #3498db; /* Light theme icon background */
+    color: #fff; /* Light theme icon text color */
+}
+body.light #about p {
+    color: #121212;
+}
+body.light #experience h2 {
+    color: #121212;
+}
+body.light #experience-timeline:before,
+body.light #experience-timeline:after {
+    background: #3498db;
+}
+body.light .vtimeline-content {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+body.light .vtimeline-content h3 {
+    color: #121212;
+}
+body.light .vtimeline-content h4 {
+    color: #121212;
+}
+body.light .vtimeline-content p {
+    color: #121212;
+}
+body.light .vtimeline-icon {
+    background: #3498db;
+    color: #fff;
+}
+body.light .vtimeline-date {
+    color: #121212;
+}
+body.light #education {
+    border-bottom: 1px solid #ddd;
+}
+body.light #education h2 {
+    color: #121212;
+}
+body.light .education-block {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}
+body.light .education-block h3 {
+    color: #121212;
+}
+body.light .education-block span {
+    color: #121212;
+}
+body.light .education-block h4 {
+    color: #121212;
+}
+body.light .education-block p,
+body.light .education-block ul {
+    color: #121212;
+}
+body.light #projects {
+    border-bottom: 1px solid #ddd;
+}
+body.light #projects h2 {
+    color: #121212;
+}
+body.light .project {
+    background: #f8f9fa;
+}
+body.light .project-info {
+    margin-left: 300px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+}
+body.light .project-info h3 {
+    color: #121212;
+}
+body.light .project-info p {
+    color: #121212;
+}
+body.light .project-info a {
+    color: #3498db;
+}
+body.light .no-image .project-info {
+    background: #f8f9fa;
+    padding: 30px 15px;
+    border-radius: 4px;
+}
+body.light #skills h2 {
+    color: #121212;
+}
+body.light #skills li {
+    color: #121212;
+    background: #e9ecef;
+}
+body.light #contact {
+    background: #f8f9fa;
+}
+body.light #contact h2 {
+    color: #121212;
+}
+body.light #contact-form input,
+body.light #contact-form textarea {
+    background: #ffffff;
+    color: #121212;
+}
+body.light #contact-form input::-webkit-input-placeholder,
+body.light #contact-form textarea::-webkit-input-placeholder {
+    color: #121212;
+}
+
+body.light #contact-form input:-moz-placeholder,
+body.light #contact-form textarea:-moz-placeholder {
+    color: #121212;
+    opacity: 1;
+}
+body.light #contact-form input::-moz-placeholder,
+body.light #contact-form textarea::-moz-placeholder {
+    color: #121212;
+    opacity: 1;
+}
+body.light #contact-form input:-ms-input-placeholder,
+body.light #contact-form textarea:-ms-input-placeholder {
+    color: #121212;
+}
+
+body.light #contact-form input:focus,
+body.light #contact-form textarea:focus {
+    background: #ffffff;
+}
+body.light #contact-form button {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.light .optional-section {
+    border-top: 1px solid #ddd;
+}
+body.light .optional-section h2 {
+    color: #121212;
+}
+
+body.light .optional-section-block {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+}
+body.light .optional-section-block h3 {
+    color: #121212;
+}
+body.light .optional-section-block h4 {
+    color: #121212;
+}
+body.light .optional-section-block p,
+body.light .optional-section-block ul {
+    color: #121212;
+}
+
+
+.no-js #experience-timeline > div {
+    background: #1e1e1e; /* Warna background dark */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333; /* Warna border dark */
+}
+
+.no-js #experience-timeline > div h3,
+.no-js #experience-timeline > div h4,
+.no-js #experience-timeline > div p {
+    color: #e0e0e0; /* Warna teks light */
+}
+
+header {
+    background: #1e1e1e; /* Warna background header dark */
+}
+
+header ul {
+    background: #1e1e1e; /* Warna background dark */
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+header a {
+    color: #e0e0e0; /* Warna teks light */
+}
+
+header a:hover {
+    color: #ffffff; /* Warna teks hover */
+    background: #333; /* Warna background hover */
+}
+
+#mobile-menu-open,
+#mobile-menu-close {
+    background: #1e1e1e; /* Warna background dark */
+    color: #e0e0e0; /* Warna ikon light */
+}
+
+footer {
+    background: #1e1e1e; /* Warna background footer dark */
+}
+
+.copyright p {
+    color: #e0e0e0; /* Warna teks light */
+}
+
+.top span {
+    border: 3px solid #333; /* Warna border dark */
+    color: #e0e0e0; /* Warna ikon light */
+}
+
+.social a {
+    color: #e0e0e0; /* Warna ikon light */
+}
+
+.social a:hover {
+    color: #ffffff; /* Warna ikon hover */
+}
+
+.btn-rounded-white {
+    color: #1e1e1e; /* Warna teks dark */
+    border: 3px solid #e0e0e0; /* Warna border light */
+    background: #e0e0e0; /* Warna background light */
+}
+
+.btn-rounded-white:hover {
+    color: #e0e0e0; /* Warna teks light */
+    background: #1e1e1e; /* Warna background dark */
+}
+
+.shadow {
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+}
+
+.shadow-large {
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.08), 0 3px 6px rgba(255, 255, 255, 0.15);
+}
+
+#lead {
+    background: #1e1e1e; /* Warna background dark */
+}
+
+#lead-content h1 {
+    color: #e0e0e0; /* Warna teks light */
+}
+
+#lead-content h2 {
+    color: #a0cfee; /* Warna teks light */
+}
+
+#lead-overlay {
+    background: #1e1e1e; /* Warna overlay tetap */
+}
+
+#lead-down span {
+    border: 3px solid #1e1e1e; /* Warna border light */
+    color: #e0e0e0; /* Warna ikon light */
+}
+
+#about,
+#experience,
+#education,
+#projects,
+#skills,
+#contact,
+.optional-section {
+    background: #1e1e1e; /* Warna background dark */
+    color: #e0e0e0; /* Warna teks light */
+    border-color: #333; /* Warna border dark */
+}
+
+.vtimeline-content {
+    background: #1e1e1e; /* Warna background dark */
+    border: 1px solid #333; /* Warna border dark */
+}
+
+.vtimeline-icon {
+    background: #3498db; /* Warna ikon tetap */
+    color: #fff; /* Warna teks ikon tetap */
+}
+
+.vtimeline-date {
+    color: #e0e0e0; /* Warna teks light */
+}
+
+.education-block {
+    background: #1e1e1e; /* Warna background dark */
+    border: 1px solid #333; /* Warna border dark */
+}
+
+.project {
+    background: #1e1e1e; /* Warna background dark */
+}
+
+.project-info h3,
+.project-info p,
+.project-info a {
+    color: #e0e0e0; /* Warna teks light */
+}
+
+.project-info a:hover {
+    color: #3498db; /* Warna teks link hover tetap */
+}
+
+.skills-list li {
+    background: #333; /* Warna background skill dark */
+    color: #e0e0e0; /* Warna teks light */
+}
+
+#contact {
+    background: #1e1e1e; /* Warna background dark */
+}
+
+#contact h2 {
+    color: #e0e0e0; /* Warna teks light */
+}
+
+#contact-form input,
+#contact-form textarea {
+    background: #333; /* Warna background input dark */
+    color: #e0e0e0; /* Warna teks input light */
+}
+
+#contact-form button {
+    background: #e0e0e0; /* Warna background tombol light */
+    color: #1e1e1e; /* Warna teks tombol dark */
+}
+
+/* Menghapus duplikasi dan memastikan kontras yang baik */
+#experience-timeline > div {
+    background: #1e1e1e;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+}
+
+.no-js #experience-timeline > div h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #e0e0e0; /* Warna teks light */
+    display: inline-block;
+    margin: 0;
+}
+
+.no-js #experience-timeline > div h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #e0e0e0; /* Warna teks light */
+    margin: 0 0 15px 0;
+}
+
+.no-js #experience-timeline > div p {
+    color: #e0e0e0; /* Warna teks light */
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.no-js #experience-timeline:before,
+.no-js #experience-timeline:after {
+    content: none;
+}
+
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Tambahkan untuk header tetap dan perubahan warna saat di-scroll */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    background: #1e1e1e;
+    z-index: 20;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+body.light header {
+    background: #f8f9fa;
+}
+
+body {
+    padding-top: 60px; /* Beri ruang untuk header tetap */
+}
+
+/* Header shadow and color change when scrolling */
+header.scrolled {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: #ffffff; /* Warna background putih saat di-scroll */
+}
+
+header.scrolled a {
+    color: #121212; /* Warna teks gelap saat di-scroll */
+}
+
+header ul {
+    display: inline-block;
+    background: inherit;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+header li {
+    display: inline-block;
+}
+
+header a {
+    display: block;
+    color: inherit;
+    padding: 10px;
+}
+
+header a:hover {
+    color: #3498db; /* Warna teks saat hover */
+    background: #e9ecef; /* Warna background saat hover */
+}
+
+
+header a:focus {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+header.active {
+    display: block;
+}
+
+header.sticky {
+    position: fixed;
+    z-index: 999;
+}
+
+#menu.active {
+    display: block;
+}
+
+#mobile-menu-open {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    color: #e0e0e0;
+    font-size: 1.5em;
+    z-index: 20;
+    padding: 0 7px;
+    border-radius: 4px;
+    background: #1e1e1e;
+}
+
+#mobile-menu-close {
+    display: none;
+    text-align: right;
+    width: 100%;
+    background: #1e1e1e;
+    font-size: 1.5em;
+    padding-right: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+    color: #e0e0e0;
+}
+
+#mobile-menu-close span {
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
+
+#mobile-menu-close i {
+    vertical-align: middle;
+}
+
+footer {
+    padding: 50px 0;
+}
+
+.copyright {
+    padding-top: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.top {
+    text-align: center;
+}
+
+.top span {
+    cursor: pointer;
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #b9bfc4;
+    text-align: center;
+}
+
+.top i {
+    color: #e0e0e0;
+}
+
+.social {
+    text-align: right;
+}
+
+.social ul {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.social li {
+    display: inline-block;
+    font-size: 1.25em;
+    list-style: none;
+}
+
+.social a {
+    display: block;
+    color: #e0e0e0;
+    padding: 10px;
+}
+
+.social a:hover {
+    color: #3498db;
+}
+
+.btn-rounded-white {
+    display: inline-block;
+    color: #1e1e1e;
+    padding: 15px 25px;
+    border: 3px solid #e0e0e0;
+    border-radius: 30px;
+    transition: .5s ease all;
+}
+
+.btn-rounded-white:hover {
+    color: #e0e0e0;
+    background: #1e1e1e;
+    text-decoration: none;
+}
+
+.shadow {
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+}
+
+.shadow-large {
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.08), 0 3px 6px rgba(255, 255, 255, 0.15);
+}
+
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+.heading:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #3498db;
+}
+
+.background-alt {
+    background: #f2f2f5;
+}
+
+#lead {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    /* background: url(../images/lead-bg.jpg); */
+    /* background-size: cover; */
+    padding: 15px;
+    background-color: #121212;
+    overflow: hidden;
+}
+
+#lead-content {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#lead-content h1,
+#lead-content h2 {
+    margin: 0;
+}
+
+#lead-content h1 {
+    color: #e0e0e0;
+    font-weight: 900;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em;
+}
+
+#lead-content h2 {
+    /* color: #a0cfee; */
+    font-weight: 500;
+    font-size: 2.25em;
+    margin-bottom: 15px;
+}
+
+#lead-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(33, 125, 187, 0.8);
+    z-index: 1;
+}
+
+#lead-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: 15px;
+    color: #e0e0e0;
+}
+
+#lead-down span {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #a0cfee;
+    text-align: center;
+}
+
+#lead-down i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#about {
+    padding: 75px 15px;
+    border-bottom: 1px solid #333;
+}
+
+#about h2 {
+    color: #e0e0e0;
+}
+
+#about p {
+    color: #e0e0e0;
+    margin: 0;
+}
+
+#experience {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+#experience h2 {
+    color: #e0e0e0;
+}
+
+#experience-timeline {
+    margin: 30px auto 0 auto;
+    position: relative;
+    max-width: 1000px;
+}
+
+#experience-timeline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 315px;
+    right: auto;
+    height: 100%;
+    width: 3px;
+    background: #3498db;
+    z-index: 10;
+}
+
+#experience-timeline:after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 40px;
+    background: #3498db;
+    background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+    top: 100%;
+    left: 315px;
+}
+
+.vtimeline-content {
+    margin-left: 350px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.vtimeline-content h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #e0e0e0;
+    display: inline-block;
+    margin: 0;
+}
+
+.vtimeline-content h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #e0e0e0;
+    margin: 0 0 15px 0;
+}
+
+.vtimeline-content p {
+    color: #e0e0e0;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.vtimeline-point {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.vtimeline-icon {
+    position: relative;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    border-radius: 50%;
+    float: left;
+    z-index: 99;
+    margin-left: 280px;
+}
+
+.vtimeline-icon i {
+    display: block;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.vtimeline-date {
+    width: 260px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+#education {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+#education h2 {
+    color: #e0e0e0;
+    margin-bottom: 50px;
+}
+
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+.education-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.education-block span {
+    color: #e0e0e0;
+    float: right;
+}
+
+.education-block h4 {
+    color: #e0e0e0;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.education-block p,
+.education-block ul {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 0.9em;
+}
+
+.education-block ul {
+    padding: 0 0 0 15px;
+}
+
+#projects {
+    padding: 50px 15px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+#projects h2 {
+    color: #e0e0e0;
+    margin-bottom: 50px;
+}
+
+.project {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #1e1e1e;
+    border-radius: 4px;
+}
+
+.project-image {
+    float: left;
+}
+
+.project-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding: 15px;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #e0e0e0;
+    margin: 0 0 15px 0;
+}
+
+.project-info p {
+    color: #e0e0e0;
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+}
+
+.no-image .project-info {
+    position: relative;
+    margin: 0;
+    padding: 30px 15px;
+    transform: none;
+}
+
+#more-projects {
+    display: none;
+}
+
+#skills {
+    padding: 50px 15px;
+    text-align: center;
+}
+
+#skills h2 {
+    color: #e0e0e0;
+    margin-bottom: 50px;
+}
+
+#skills ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: #e0e0e0;
+    background: #333;
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em;
+}
+
+#contact {
+    padding: 50px 15px;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+#contact h2 {
+    margin: 0 0 15px 0;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: #333;
+    color: #e0e0e0;
+    transition: .5s ease all;
+}
+
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder {
+    color: #e0e0e0;
+}
+
+#contact-form input:-moz-placeholder,
+#contact-form textarea:-moz-placeholder {
+    color: #e0e0e0;
+    opacity: 1;
+}
+
+#contact-form input::-moz-placeholder,
+#contact-form textarea::-moz-placeholder {
+    color: #e0e0e0;
+    opacity: 1;
+}
+
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder {
+    color: #e0e0e0;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    background: #16527a;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: none;
+    color: #1e1e1e;
+    font-weight: 700;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: .5s ease all;
+}
+
+#contact-form button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.optional-section {
+    padding: 50px 15px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.optional-section h2 {
+    color: #e0e0e0;
+}
+
+.optional-section-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #333;
+    background: #1e1e1e;
+    text-align: left;
+}
+
+.optional-section-block h3 {
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    color: #e0e0e0;
+}
+
+.optional-section-block h4 {
+    color: #e0e0e0;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.optional-section-block p,
+.optional-section-block ul {
+    margin: 0 0 15px 0;
+    color: #e0e0e0;
+    font-size: 0.9em;
+}
+
+.optional-section-block ul {
+    padding: 0 0 0 15px;
+}
+
+@media only screen and (max-width: 750px) {
+    #experience-timeline:before,
+    #experience-timeline:after {
+        left: 35px;
+    }
+
+    .vtimeline-date {
+        width: auto;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: 70px;
+    }
+
+    .vtimeline-icon {
+        margin-left: 0;
+    }
+
+    .vtimeline-content {
+        margin-left: 70px;
+    }
+    body.light     .project-image {
+        display: none;
+    }
+
+    body.light .project-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        top: auto;
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #lead {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        padding: 100px 15px;
+    }
+
+    #lead-content {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+    }
+
+    #lead-content h1 {
+        font-size: 3em;
+    }
+
+    #lead-content h2 {
+        font-size: 1.75em;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    #about p {
+        text-align: left;
+    }
+    body.light     .project-image {
+        display: none;
+    }
+
+    body.light .project-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        top: auto;
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        display: none;
+        z-index: 999;
+        animation: none;
+        bottom: 0;
+        height: 100%;
+    }
+
+    #mobile-menu-open,
+    #mobile-menu-close {
+        display: block;
+    }
+
+    #menu {
+        height: 100%;
+        overflow-y: auto;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    #menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #lead-content h1 {
+        font-size: 2em;
+    }
+
+    #lead-content h2 {
+        font-size: 1.3em;
+    }
+
+    #lead-content a {
+        padding: 10px 20px;
+    }
+
+    #lead-down {
+        display: none;
+    }
+
+    .education-block h3,
+    .education-block span {
+        float: none;
+    }
+
+    .project-image {
+        display: none;
+    }
+
+    .project-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        top: auto;
+        transform: none;
+    }
+    body.light     .project-image {
+        display: none;
+    }
+
+    body.light .project-info {
+        position: relative;
+        margin: 0;
+        padding: 30px 15px;
+        top: auto;
+        transform: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .social {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #lead-content h1 {
+        font-size: 1.5em;
+    }
+
+    #lead-content h2 {
+        font-size: 1em;
+    }
+
+    #lead-content a {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+    
+}
+
+@keyframes rubberBand {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.25, 0.75);
+    }
+    40% {
+        transform: scale(0.75, 1.25);
+    }
+    50% {
+        transform: scale(1.15, 0.85);
+    }
+    65% {
+        transform: scale(0.95, 1.05);
+    }
+    75% {
+        transform: scale(1.05, 0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.vtimeline-content[data-aos="rubberBand"] {
+    animation: rubberBand 1s both;
+}
