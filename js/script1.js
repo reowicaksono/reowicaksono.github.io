@@ -7,7 +7,6 @@ function updateCountdown() {
 
   if (timeDifference <= 0) {
     clearInterval(timerInterval); 
-    console.log("Countdown selesai. Menampilkan perayaan!");
     showCelebration(); 
     return;
   }
@@ -24,7 +23,6 @@ function updateCountdown() {
 }
 
 function showCelebration() {
-  console.log("Menampilkan perayaan...");
   document.querySelector('.countdown-container').classList.add('hidden'); 
   const celebrationElement = document.getElementById('celebration');
   celebrationElement.classList.remove('hidden'); 
