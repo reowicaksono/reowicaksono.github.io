@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e003e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .countdown-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .time {
+    background: #4b0082;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    min-width: 100px;
+  }
+  
+  .time span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  .time p {
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+
+  .hidden {
+    display: none !important;
+  }
+  
+  #celebration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000 url('https://i.imgur.com/pglVwFP.jpeg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  #celebration.show {
+    visibility: visible; 
+    opacity: 1; 
+  }
+  
+  .new-year-message {
+    font-size: 3rem;
+    color: #fff;
+    z-index: 2;
+    animation: fadeIn 2s;
+  }
+  
+  .balloons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .balloon {
+    width: 50px;
+    height: 80px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    position: relative;
+    animation: float 5s infinite ease-in-out;
+  }
+  
+  .balloon::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: #fff;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .balloon:nth-child(2) {
+    background-color: #3498db;
+    animation-delay: 1s;
+  }
+  
+  .balloon:nth-child(3) {
+    background-color: #e74c3c;
+    animation-delay: 2s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(-50px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100px);
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
