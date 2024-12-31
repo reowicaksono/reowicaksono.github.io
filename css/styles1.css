@@ -50,7 +50,7 @@ body {
   
 
   .hidden {
-    display: none !important;
+    display: none !important; /* Pastikan elemen tidak terlihat */
   }
   
   #celebration {
@@ -140,4 +140,70 @@ body {
       opacity: 1;
     }
   }
+
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; 
+      margin-bottom: 15px;
+    }
+  
+    .countdown {
+      gap: 10px; 
+    }
+  
+    .time {
+      padding: 15px;
+      font-size: 1.2rem;
+      min-width: 70px;
+    }
+  
+    .time span {
+      font-size: 2rem;
+    }
+  
+    .balloon {
+      width: 30px; 
+      height: 60px;
+    }
+  
+    .balloon::after {
+      height: 30px; 
+    }
+  
+    .new-year-message {
+      font-size: 1.5rem; 
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .time {
+      padding: 10px;
+      font-size: 1rem;
+      min-width: 60px;
+    }
+  
+    .time span {
+      font-size: 1.5rem;
+    }
+  
+    .balloon {
+      width: 20px; 
+      height: 50px;
+    }
+  
+    .balloon::after {
+      height: 20px; 
+    }
+  
+    .new-year-message {
+      font-size: 1.2rem;
+    }
+  }
+  
   
